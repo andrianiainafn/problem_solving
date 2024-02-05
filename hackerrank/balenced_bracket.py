@@ -22,7 +22,7 @@ def solution2(s):
     for i in range(len(s) - 1):
         if s[i] == ')' or s[len(s)-1] == ')':
             l[')'] += 1
-        if s[i] == '{' and (s[i + 1] == ']' or s[i + 1] == ')'):
+        if s[i] == '{' and (s[i + 1] == ']' or s[i + 1]     == ')'):
             return "NO"
         elif s[i] == '[' and (s[i + 1] == ')' or s[i + 1] == '}'):
             return "NO"
@@ -39,6 +39,6 @@ def solution2(s):
 
 
 if __name__ == "__main__":
-    print(solution2("{  ( ([]) [] ) [] ]  }"))  # NO
+    print(solution2("{(([])[])[]]}"))  # NO
     # print(solution("{(([])[])[]}[]")) #YES
     # print(solution2("{(([])[])[]]}")) #NO
