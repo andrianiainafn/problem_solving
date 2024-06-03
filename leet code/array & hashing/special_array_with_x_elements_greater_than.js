@@ -3,7 +3,6 @@ const specialArray = function(nums) {
     let l= 0
     let r= nums.length
     let x= 1
-    let m =0
     if(nums.length == 1 && nums[0] !=0 ){
         return 1
     }
