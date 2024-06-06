@@ -12,15 +12,14 @@ const twoSum = function(numbers, target) {
     // }
     // return []
 
-    //optimal solution (binary search)
+    // optimal solution (binary search)
     // numbers.sort((a,b)=>a-b)
     // let n = numbers.length
     // for (let i = 0; i < n; i++) {
     //     let c = target - numbers[i]
     //     let r = n -1
     //     let l = i+1
-    //     while (l<r){
-    //         console.log(i,"c")
+    //     while (l<=r){
     //         let  m = Math.floor((r+l)/2)
     //         if (c == numbers[m]){
     //             return [i+1,m+1]
@@ -34,7 +33,7 @@ const twoSum = function(numbers, target) {
     //     }
     // }
 
-    //very optimal solution
+    // very optimal solution
     let  l = 0
     let r = numbers.length -1
     while (l<r){
